@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <input id="name" placeholder="Tên Sinh Viên">
+    <input id="id" placeholder="Mã SV">
+    <input id="dob" type="date">
+    <input id="class" placeholder="Lớp">
+    <input id="gpa" placeholder="GPA">
+
+    <button onclick="addStudent()">Nhập Dữ Liệu</button>
+    <button onclick="deleteStudent()">Xoá Dữ Liệu</button>
+    <button onclick="updateStudent()">Cập Nhật Dữ Liệu</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Lớp</th>
+                <th>Ngày sinh</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
